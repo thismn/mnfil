@@ -21,7 +21,7 @@ Saya Kira Ini Akan Bermanfaat Bagi Banyak Orang.. 😇.
 ### Installation
 #### Deploy on Heroku
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/thismn/mantafps"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="215"> </a> <br>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/thismn/manfl"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="215"> </a> <br>
 
 
 #### Deploy in your VPS
