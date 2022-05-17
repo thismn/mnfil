@@ -12,7 +12,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from bot import Bot
 from .button import fsub_button, start_button
-from config import ADMINS, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, FORCE_MSG, START_MSG
+from config import ADMINS, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, FORCE_MSG, START_MSG, PROTECT_CONTENT
 from database.sql import add_user, full_userbase, query_msg
 from helper_func import decode, get_messages, subsall, subsch, subsgc
 
@@ -100,6 +100,7 @@ async def start_command(client: Bot, message: Message):
                     caption=caption,
                     parse_mode="html",
                     reply_markup=reply_markup,
+                    protect_content=PROTECT_CONTENT,
                 )
                 await asyncio.sleep(0.5)
             except FloodWait as e:
@@ -109,6 +110,7 @@ async def start_command(client: Bot, message: Message):
                     caption=caption,
                     parse_mode="html",
                     reply_markup=reply_markup,
+                    protect_content=PROTECT_CONTENT,
                 )
             except BaseException:
                 pass
